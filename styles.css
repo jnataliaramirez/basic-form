@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    color: hsl(306, 20%, 28%);
+    background: hsl(300, 80%, 94%);
+}
+
+h1 {
+    font-family: 'Nerko One', cursive;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+h2{
+    background: hsl(167, 19%, 86%);
+    
+}
+
+.container-father-phrase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-phrase {
+    font-family: 'Sansita Swashed', cursive;
+    text-align: flex-end;
+    height: 2em;
+    width: 34em;
+    padding: 2em;
+    margin: 2em;
+    border: 0.03em solid hsl(307, 20%, 65%);
+    background: hsl(167, 19%, 86%);
+}
+
+.container-data {
+    
+
+}
