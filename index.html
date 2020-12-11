@@ -9,130 +9,164 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Sansita+Swashed&display=swap" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet"> 
 
     <title>Form</title>
 </head>
+
 <body>
+
+<div class="container-all">
     <h1>GOOD VIBES FORM</h1>
-    <div class="container-father-phrase">
-        <div class="container-phrase">
-            <h2>Tell us something positive that happened to you today.</h2>
-        </div>
+
+<div class="container-father-phrase">
+    <div class="container-phrase">
+        <h2>Tell us something positive that happened to you today.</h2>
     </div>
-    
-    <form>
-        <div class="container-data">
-            <div>
-                <label> Name
-                    <input placeholder="Enter your name" name="name">
-                </label>
-            </div>
-            <div>
-                <label> Email
-                    <input placeholder="Enter your email address" name="email" type="email">
-                </label>
-            </div>
-        </div>
-        <div>
-            <label>
-                <legend>
-                    On a scale of 1-10, how good was it?
-                </legend> 
-                <input 
-                 placeholder="Enter a number between 1 and 10" name="scaleDay" type="number">
+</div>
+
+<form>
+
+    <div class="container-form">
+
+    <div class="container-data">
+        <div class="data">
+            <label > 
+                <span>Name</span> 
+                <input placeholder="Enter your name" name="name" type="text">
             </label>
         </div>
-        <div>
-            <label>
-                <legend>
-                    Where did it happen?
-                </legend>
-                <select name="whereDidItHappen">
-                    <option value="none">---</option>
-                    <option value="home">At home</option>
-                    <option value="commute">On my commute</option>
-                    <option value="work">At work</option>
-                    <option value="street">On the street</option>
-                    <option value="other">Other</option>
-                </select>
+        <div class="data">
+            <label> 
+                <span>
+                    Email
+                </span>
+                <input placeholder="Enter your email address" name="email" type="email">
             </label>
         </div>
-        <div>
-            <label>
-                <legend>
-                    At what time of day did it happen?
-                </legend>
-                <div>
-                    <label>
-                        <input type="radio" name="timeDay" value="morning">
-                        Morning
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <input type="radio" name="timeDay" value="afternoon">
-                        Afternoon
-                    </label>    
-                </div>
-                <div>
-                    <label>
-                        <input type="radio" name="timeDay" value="evening">
-                        Evening
-                    </label>
-                </div>
-            </label>
-        </div>
-        <div>
-            <label>
-                <legend>
-                    What emotions did you experience? (Select all the apply)
-                </legend>
-                    <div>
-                        <label>
-                            <input type="checkbox" name="emotions" value="excited">
-                            Excited
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="checkbox" name="emotions" value="humbled">
-                            Humbled
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="checkbox" name="emotions" value="elated">
-                            Elated
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="checkbox" name="emotions" value="love">
-                            Love
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="checkbox" name="emotions" value="enthusiastic">
-                            Enthusiastic
-                    </label>
-                </div>
-            </label>
-        </div>
-        <div>
-            <label>Please describe your positive experience.
-                <textarea name="message" id="message" cols="30" rows="3" placeholder="Enter your experience here..."></textarea>
-            </label>
-        </div>
-        <input type="submit" value="Submit">     
-    </form>
     </div>
 
-    <footer> Source:
+    <div class="container-form-day">
+
+    <div class="data-form">
+        <label>
+            <p>
+                On a scale of 1-10, how good was it?
+            </p> 
+            <input 
+            placeholder="Enter a number between 1 and 10" name="scaleDay" type="number" id="scaleDay">
+        </label>
+    </div>
+
+    <div class="checkbox">
+    <div class="data-form-where"  >
+        <label>
+            <legend>
+                Where did it happen?
+            </legend>
+        <div>
+            <select name="whereDidItHappen" id="whereDidItHappen">
+                <option value="none">---</option>
+                <option value="home">At home</option>
+                <option value="commute">On my commute</option>
+                <option value="work">At work</option>
+                <option value="street">On the street</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        </label>
+    </div>
+    </div>
+
+    <div class="container-time">
+        <label>
+            <span>
+                At what time of day did it happen?
+            </span>
+        <div class="morning">
+            <label>
+                <input type="radio" name="timeDay" value="morning">
+                Morning
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="radio" name="timeDay" value="afternoon">
+                Afternoon
+            </label>    
+        </div>
+        <div>
+            <label>
+                <input type="radio" name="timeDay" value="evening">
+                Evening
+            </label>
+        </div>
+        </label>
+    </div>
+
+    <div class="container-emotion">
+        <label>
+            <legend>
+                What emotions did you experience? (Select all the apply)
+            </legend>
+        <div>
+            <label>
+                <input type="checkbox" name="emotions" value="excited">
+                Excited
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" name="emotions" value="humbled">
+                Humbled
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" name="emotions" value="elated">
+                Elated
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" name="emotions" value="love">
+                Love
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" name="emotions" value="enthusiastic">
+                Enthusiastic
+            </label>
+        </div>
+        </label>
+    </div>
+
+    <div class="container-textarea">
+        <label>Please describe your positive experience.</label id="message">
+        <textarea name="message" id="message" cols="30" rows="3" placeholder="Enter your experience here..."></textarea>
+        
+    </div>
+    <input type="submit" value="Submit">   
+
+    </div>
+
+    </div>
+
+</form>
+
+
+
+<footer> 
+    <div>
+        <span> Source: </span>
         <a href="https://codepen.io/laurencenairne "> 
-            <img src="/images/codepen.png" alt="imagen Codepen">
-               @laurencenairne 
+            <img src=""" alt="imagen Codepen">
+            <span>@laurencenairne</span> 
         </a>
-    </footer>
+    </div>
+</footer>
+</div>
 </body>
 </html>

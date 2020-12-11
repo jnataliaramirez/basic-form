@@ -1,39 +1,144 @@
-* {
+*, *:before, *:after {
     margin: 0;
-    color: hsl(306, 20%, 28%);
-    background: hsl(300, 80%, 94%);
-}
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    
+  }
 
 h1 {
     font-family: 'Nerko One', cursive;
-    font-size: 4rem;
+    font-size: 1.8rem;
     letter-spacing: 0.2rem;
     text-align: center;
+    margin-bottom: 1%;
 }
 
 h2{
-    background: hsl(167, 19%, 86%);
-    
+    background-color: hsl(300, 80%, 92%);
+    font-family: 'Sniglet', cursive;
+    font-size: 1.4rem;
+    border: 0;
 }
 
-.container-father-phrase {
+label ::placeholder, #message {
+    font-family: 'Sniglet', cursive;
+    font-size: 0,9rem;
+    display: block;
+    width: 100%;
+}
+
+
+.container-all{
+    background-color: hsl(300, 80%, 94%);
+}
+
+.container-father-phrase{
     display: flex;
+    justify-content: center;
+}
+
+
+.container-phrase {
+    flex: (1 1 auto);
+    border: 0 solid hsl(307, 20%, 65%);
+    border-radius: 3%;
+    text-align: center;
+    height: 4rem;
+    width: 40rem;
+}
+
+
+.container-form {
+    font-family: 'Sniglet', cursive;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.container-phrase {
-    font-family: 'Sansita Swashed', cursive;
-    text-align: flex-end;
-    height: 2em;
-    width: 34em;
-    padding: 2em;
-    margin: 2em;
-    border: 0.03em solid hsl(307, 20%, 65%);
-    background: hsl(167, 19%, 86%);
-}
 
 .container-data {
+    padding: 1em;
+    margin: 2em;
+    flex: (1 1 auto);
+    border: 0.05em solid hsl(307, 20%, 65%);
+    background-color: hsl(167, 19%, 86%);
     
+}
+
+.container-form-day {
+    padding: 1.5em;
+    margin: 2em;
+    flex: (1 1 auto);
+    border: 0.05em solid hsl(307, 20%, 65%);
+    background-color: hsl(167, 19%, 86%);
+    
+}
+
+.data input, .data-form input, #whereDidItHappen, .container-textarea textarea  {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+
+
+input:focus, #whereDidItHappen:focus, textarea:focus,  {
+    border: 2px solid hsl(177, 54%, 63%);
+}
+
+
+
+.data {
+    padding: 2%;
+    background-color: hsl(167, 19%, 86%);
+}
+
+.container-form-day {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 35px;
+}
+
+.data-form, .checkbox, .container-time, .container-emotion, .container-textarea {
+    padding: 8px;
+}
+
+.data-form {
+    display: inline-block;
+    
+    
+}
+
+#scaleDay, #whereDidItHappen {
+    width: 90%;
+}
+
+
+.container-textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 
 }
+
+textarea {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+.footer {
+    height:1rem;
+    line-height:50px;
+    background-color: hsl(300, 80%, 94%);
+    color:white;
+    text-align:center;
+    position:absolute;
+    width:100%;
+}
+
