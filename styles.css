@@ -8,7 +8,7 @@
 
 h1 {
     font-family: 'Nerko One', cursive;
-    font-size: 1.8rem;
+    font-size: 3rem;
     letter-spacing: 0.2rem;
     text-align: center;
     margin-bottom: 1%;
@@ -167,18 +167,17 @@ footer {
 footer .container-footer {
     display: flex; 
     justify-content: center; 
-    align-items: center ;
+    align-items: flex-start;
 }
 
 footer p {
     font-family: 'Montserrat';
     color: hsl(161, 29%, 44%);
-    margin-top: 8px; 
-    font-size: 15px;
+    padding: 0.5rem; 
+    font-size: 1rem;
     font-weight: 500;
 }
 
 footer span {
     color: hsl(177, 54%, 63%);
-
 }
