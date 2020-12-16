@@ -84,7 +84,7 @@ label ::placeholder, #message {
 }
 
 
-input:focus, #whereDidItHappen:focus, textarea:focus,  {
+input:focus, #whereDidItHappen:focus, textarea:focus  {
     border: 2px solid hsl(177, 54%, 63%);
 }
 
@@ -129,7 +129,31 @@ input:focus, #whereDidItHappen:focus, textarea:focus,  {
 textarea {
     margin-bottom: 20px;
     width: 100%;
+    resize: vertical;
+    max-height: 250px;
+    min-height: 100px;
 }
+
+input[type="submit"] {
+    margin-bottom: 0;
+    background: hsl(151, 56%, 52%);
+    color: hsl(272, 66%, 22%);
+    border: none;
+    width: 410px;
+    height: 41px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: hsl(161, 44%, 62%);
+}
+
+.container-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 .footer {
