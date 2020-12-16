@@ -171,11 +171,14 @@ footer .container-footer {
 }
 
 footer p {
-    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
-    color: #666;
+    font-family: 'Montserrat';
+    color: hsl(161, 29%, 44%);
     margin-top: 8px; 
-    flex-direction: column;
     font-size: 15px;
     font-weight: 500;
 }
 
+footer span {
+    color: hsl(177, 54%, 63%);
+
+}
