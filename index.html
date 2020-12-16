@@ -7,17 +7,14 @@
     <link rel="icon" href="/images/imag_form.png"> 
     <link rel="stylesheet" href="/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Sansita+Swashed&display=swap" rel="stylesheet">   
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet"> 
-
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Sniglet&display=swap" rel="stylesheet"> 
     <title>Form</title>
 </head>
 
 <body>
 
 <div class="container-all">
+    
     <h1>GOOD VIBES FORM</h1>
 
 <div class="container-father-phrase">
@@ -84,7 +81,8 @@
             <span>
                 At what time of day did it happen?
             </span>
-        <div class="morning">
+        <div class="container-time-of-day">
+        <div>
             <label>
                 <input type="radio" name="timeDay" value="morning">
                 Morning
@@ -104,12 +102,14 @@
         </div>
         </label>
     </div>
+    </div>
 
     <div class="container-emotion">
         <label>
             <legend>
                 What emotions did you experience? (Select all the apply)
             </legend>
+        <div  class="container-checkbox">
         <div>
             <label>
                 <input type="checkbox" name="emotions" value="excited">
@@ -142,6 +142,7 @@
         </div>
         </label>
     </div>
+    </div>
 
     <div class="container-textarea">
         <label>Please describe your positive experience.</label id="message">
@@ -152,7 +153,7 @@
     <div class="container-input">
         <input type="submit" value="Submit">   
     </div>
-    
+
 </div>
 
 </div>
