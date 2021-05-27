@@ -4,6 +4,15 @@
     outline: 0;
     box-sizing: border-box;
     
+}
+
+body {
+    display          : flex;
+    flex-direction   : column;
+    min-height       : calc(100vh - 3rem);
+    background-color : hsl(300, 80%, 94%);
+    padding-top: 2rem;
+
   }
 
 h1 {
@@ -11,7 +20,7 @@ h1 {
     font-size: 3rem;
     letter-spacing: 0.2rem;
     text-align: center;
-    margin-bottom: 1%;
+    margin: 0 0.4rem 1%;
 }
 
 h2{
@@ -29,10 +38,6 @@ label ::placeholder, #message {
     width: 100%;
 }
 
-.container-all{
-    background-color: hsl(300, 80%, 94%);
-    padding-top: 2rem;
-}
 
 .container-father-phrase{
     display: flex;
@@ -51,15 +56,15 @@ label ::placeholder, #message {
 .container-form {
     font-family: 'Sniglet', cursive;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 1.25rem ;
 }
 
 .container-data {
-    padding: 1em;
-    margin: 2em;
+    padding: 1.5em;
+    margin-top: 2em;
     flex: (1 1 auto);
     border: 0.05em solid hsl(307, 20%, 65%);
     background-color: hsl(167, 19%, 86%);
@@ -69,9 +74,9 @@ label ::placeholder, #message {
 .container-form-day {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 1.75rem;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
     margin: 2em;
     flex: (1 1 auto);
     border: 0.05em solid hsl(307, 20%, 65%);
@@ -101,13 +106,15 @@ input:focus, #whereDidItHappen:focus, textarea:focus  {
 }
 
 .data-form, .checkbox, .container-time, .container-emotion, .container-textarea {
-    padding: 0.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.container-emotion, .container-textarea  {
+    width: 16rem;
 }
 
 .data-form {
-    display: inline-block;
-    
-    
+    display: flex;
 }
 
 #scaleDay, #whereDidItHappen {
@@ -126,10 +133,10 @@ input:focus, #whereDidItHappen:focus, textarea:focus  {
 
 textarea {
     margin-bottom: 125rem;
-    width: 100%;
+    width: 85%;
     resize: vertical;
-    max-height: 15.625rem;
-    min-height: 6.25rem;
+    max-height: 70vh;
+    min-height: 30vh;
 }
 
 input[type="submit"] {
@@ -138,7 +145,7 @@ input[type="submit"] {
     background: hsl(151, 56%, 52%);
     color: hsl(272, 66%, 22%);
     border: none;
-    width: 25.625rem;
+    width: 16rem;
     height: 2.563rem;
     font-size: 1.063rem;
 }
@@ -167,7 +174,7 @@ footer {
 footer .container-footer {
     display: flex; 
     justify-content: center; 
-    align-items: flex-start;
+    align-items: center;
 }
 
 footer p {
@@ -180,4 +187,27 @@ footer p {
 
 footer span {
     color: hsl(177, 54%, 63%);
+}
+
+@media screen and (min-width: 768px ) {
+    .container-form-day {
+       padding: 3rem;
+    }
+
+    .data-form, .checkbox, .container-time, .container-emotion, .container-textarea {
+        padding-bottom: 1.5rem;
+    }
+    
+    .container-emotion  {
+        width: 26rem;
+    }
+
+    .container-textarea {
+        width: 26rem ;
+    }
+
+    input[type="submit"] {
+        width: 25rem;
+    }
+
 }
